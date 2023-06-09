@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="justify-content: center; display: flex; flex-direction: column; width: 50vw;">
       <h1>This is the create page</h1>
       <v-btn @click="add()" >Create Haus</v-btn>
     </div>
@@ -10,13 +10,11 @@
 
   export default {
     data: () => ({
-      hauses: [],
       article: {
         id: 0,
         name: "The Cave",
         address: "601 East Unaka"
       },
-      errorMessage: ""
     }),
     methods:{
         add(){

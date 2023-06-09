@@ -5,10 +5,9 @@
         app
     >
         <template v-slot:prepend>
-          <v-app-bar-nav-icon></v-app-bar-nav-icon>
+          <v-app-bar-title style="cursor: pointer;" @click="$router.push('/')">Vogelhaus</v-app-bar-title>
         </template>
 
-        <v-app-bar-title style="cursor: pointer;" @click="$router.push('/')">Vogelhaus</v-app-bar-title>
 
         <template v-slot:append>
           <v-btn icon="mdi-dots-vertical" @click.stop="drawer = !drawer"></v-btn>

@@ -7,7 +7,7 @@ import TopBar from './components/TopBar.vue';
  
   <v-app id="app">
     <TopBar/>
-    <v-container fluid>
+    <v-container class="container" fluid>
       <v-main>
         <RouterView />
       </v-main>
@@ -16,5 +16,4 @@ import TopBar from './components/TopBar.vue';
 </template>
 
 <style scoped>
-
 </style>
