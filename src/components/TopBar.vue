@@ -5,7 +5,7 @@
         app
     >
         <template v-slot:prepend>
-          <v-app-bar-title style="cursor: pointer;" @click="$router.push('/')">Vogelhaus</v-app-bar-title>
+          <v-app-bar-title style="cursor: pointer;" @click="$router.replace('/')">Vogelhaus</v-app-bar-title>
         </template>
 
 
@@ -19,7 +19,8 @@
         temporary
       >
         <v-list>
-            <v-list-item 
+            <v-list-item
+             
             v-for="item in items"
             :title="item.title"
             :to="item.path"
@@ -36,7 +37,7 @@
       items: [
         {
           title: 'Create Haus',
-          path: 'createHaus',
+          path: '../createHaus',
         },
 
       ],
