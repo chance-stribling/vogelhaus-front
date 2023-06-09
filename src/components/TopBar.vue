@@ -5,7 +5,7 @@
         app
     >
         <template v-slot:prepend>
-          <v-app-bar-title style="cursor: pointer;" @click="$router.replace('/')">Vogelhaus</v-app-bar-title>
+          <v-app-bar-title style="cursor: pointer;" @click="$router.replace('/hauses')">Vogelhaus</v-app-bar-title>
         </template>
 
 

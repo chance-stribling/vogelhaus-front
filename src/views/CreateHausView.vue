@@ -13,7 +13,7 @@
           :rules="rules2"
           label="Haus Address"
         ></v-text-field>
-        <v-btn type="submit" class="my-10" @submit="add()" >Create Haus</v-btn>
+        <v-btn type="submit" class="my-10" @click="add()" >Create Haus</v-btn>
       </v-form>
   </v-sheet>
   </template>
