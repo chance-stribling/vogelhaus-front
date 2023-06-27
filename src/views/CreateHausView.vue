@@ -47,7 +47,20 @@
             axios.post("http://localhost:8080/haus", this.haus)
             .then((response) => {
                 console.log(response);
+                if((response.data=="")){
+                  alert("Haus Already Exists")
+                  this.haus.name=" ";
+                  this.haus.address=" ";
+
+                }
+                else{
+                  alert("Haus Created")
+                  this.haus.name=" ";
+                  this.haus.address=" ";
+                  window.location.href = "/hauses";
+                }
             })
+
         }
     }
   }

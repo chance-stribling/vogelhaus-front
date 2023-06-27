@@ -1,6 +1,11 @@
 <template>
     <div class="text-center mt-15">
       <h1> Welcome Home </h1>
+      <div class="container unauthenticated">
+</div>
+<div class="container authenticated" style="display:none">
+    Logged in as: <span id="user"></span>
+</div>
       <v-btn
         color="primary"
         @click="dialog = true"
